@@ -9,7 +9,7 @@ class Song
   @@songs = []
 
   def initialize
-    @@songs << self
+    #@@songs << self
   end
 
   def self.all
