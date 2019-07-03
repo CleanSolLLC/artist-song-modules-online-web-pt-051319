@@ -1,10 +1,8 @@
 require 'pry'
 
 class Song
-  extend Findable
-  extend Memorable::ClassMethods
-  include Paramable
-  include Memorable::InstanceMethods
+  extend Memorable::ClassMethods, Findable
+  include Memorable::InstanceMethods, Paramable
 
   @@songs = []
 
